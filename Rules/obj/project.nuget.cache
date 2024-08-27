@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "IB+/YSenpEWDUgRxkh21HyIjH1VYxVYb9ISUMlHJjYE9y/i2CwcGKO+3ZBxgxx6D5l8AP6TjvsOhiRq2+kbn0A==",
+  "success": true,
+  "projectFilePath": "/Users/di/RiderProjects/icd0008-23f/UNO/Rules/Rules.csproj",
+  "expectedPackageFiles": [
+    "/Users/di/.nuget/packages/microsoft.netcore.app.ref/7.0.18/microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "/Users/di/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.18/microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}

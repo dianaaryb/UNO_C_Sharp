@@ -1,0 +1,712 @@
+{
+  "Id": "8eafa2a8-c635-4a80-8566-e41669dee192",
+  "Dealer": {
+    "CountStatingHandSize": 5,
+    "DeckPile": [
+      {
+        "CardColor": 1,
+        "CardValue": 2,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 12,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 4,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 4,
+        "CardValue": 14,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 2,
+        "CardValue": 11,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 11,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 2,
+        "CardValue": 0,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 8,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 3,
+        "CardValue": 12,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 0,
+        "CardValue": 1,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 4,
+        "CardValue": 14,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 2,
+        "CardValue": 3,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 0,
+        "CardValue": 11,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 4,
+        "CardValue": 14,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 2,
+        "CardValue": 12,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 3,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 0,
+        "CardValue": 10,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 4,
+        "CardValue": 14,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 10,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 3,
+        "CardValue": 12,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 3,
+        "CardValue": 8,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 1,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 3,
+        "CardValue": 2,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 0,
+        "CardValue": 7,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 2,
+        "CardValue": 5,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 0,
+        "CardValue": 4,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 3,
+        "CardValue": 4,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 3,
+        "CardValue": 3,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 2,
+        "CardValue": 3,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 3,
+        "CardValue": 1,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 0,
+        "CardValue": 12,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 0,
+        "CardValue": 9,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 5,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 3,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 2,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 4,
+        "CardValue": 13,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 0,
+        "CardValue": 2,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 2,
+        "CardValue": 11,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 0,
+        "CardValue": 1,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 3,
+        "CardValue": 7,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 0,
+        "CardValue": 6,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 3,
+        "CardValue": 11,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 7,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 6,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 0,
+        "CardValue": 8,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 4,
+        "CardValue": 13,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 4,
+        "CardValue": 16,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 3,
+        "CardValue": 9,
+        "WasPlayed": false
+      }
+    ],
+    "GameConfigurations": {
+      "TotalPlayers": "4",
+      "HumanPlayers": "2",
+      "AiPlayers": null,
+      "SaveLocation": 1,
+      "RuleDictionaryType": "OfficialRules",
+      "RuleTypeInput": null,
+      "Players": [
+        {
+          "Id": "513277e6-911b-4816-85bb-b3751eb5c088",
+          "PlayerType": 0,
+          "Name": "Di",
+          "PlayerHand": [
+            {
+              "CardColor": 1,
+              "CardValue": 4,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 1,
+              "CardValue": 10,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 1,
+              "CardValue": 12,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 1,
+              "CardValue": 6,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 2,
+              "CardValue": 12,
+              "WasPlayed": false
+            }
+          ],
+          "Score": 0,
+          "MustSkip": false
+        },
+        {
+          "Id": "0fdd9867-6390-4b07-a24c-0b1a96cf4292",
+          "PlayerType": 0,
+          "Name": "Du",
+          "PlayerHand": [
+            {
+              "CardColor": 0,
+              "CardValue": 5,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 2,
+              "CardValue": 1,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 2,
+              "CardValue": 9,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 3,
+              "CardValue": 4,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 0,
+              "CardValue": 10,
+              "WasPlayed": false
+            }
+          ],
+          "Score": 0,
+          "MustSkip": false
+        },
+        {
+          "Id": "743acbaf-77e5-4f8c-8f1a-87eafd0ae0c0",
+          "PlayerType": 1,
+          "Name": "Ai7",
+          "PlayerHand": [
+            {
+              "CardColor": 3,
+              "CardValue": 5,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 1,
+              "CardValue": 9,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 2,
+              "CardValue": 2,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 2,
+              "CardValue": 1,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 1,
+              "CardValue": 5,
+              "WasPlayed": false
+            }
+          ],
+          "Score": 0,
+          "MustSkip": false
+        },
+        {
+          "Id": "bd87cddb-3197-4ac1-bb6d-6579849737bd",
+          "PlayerType": 1,
+          "Name": "Ai8",
+          "PlayerHand": [
+            {
+              "CardColor": 2,
+              "CardValue": 2,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 1,
+              "CardValue": 11,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 3,
+              "CardValue": 10,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 0,
+              "CardValue": 8,
+              "WasPlayed": false
+            },
+            {
+              "CardColor": 0,
+              "CardValue": 3,
+              "WasPlayed": false
+            }
+          ],
+          "Score": 0,
+          "MustSkip": false
+        }
+      ],
+      "HaveToShowPoints": false
+    },
+    "DiscardPile": [
+      {
+        "CardColor": 0,
+        "CardValue": 0,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 0,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 13,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 16,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 2,
+        "CardValue": 12,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 2,
+        "CardValue": 8,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 2,
+        "CardValue": 8,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 2,
+        "CardValue": 6,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 13,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 1,
+        "CardValue": 8,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 2,
+        "CardValue": 9,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 2,
+        "CardValue": 7,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 0,
+        "CardValue": 7,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 0,
+        "CardValue": 6,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 0,
+        "CardValue": 3,
+        "WasPlayed": false
+      },
+      {
+        "CardColor": 0,
+        "CardValue": 5,
+        "WasPlayed": false
+      }
+    ]
+  },
+  "GameConfigurations": {
+    "TotalPlayers": "4",
+    "HumanPlayers": "2",
+    "AiPlayers": null,
+    "SaveLocation": 1,
+    "RuleDictionaryType": "OfficialRules",
+    "RuleTypeInput": null,
+    "Players": [
+      {
+        "Id": "513277e6-911b-4816-85bb-b3751eb5c088",
+        "PlayerType": 0,
+        "Name": "Di",
+        "PlayerHand": [
+          {
+            "CardColor": 1,
+            "CardValue": 4,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 1,
+            "CardValue": 10,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 1,
+            "CardValue": 12,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 1,
+            "CardValue": 6,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 1,
+            "CardValue": 7,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 3,
+            "CardValue": 2,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 3,
+            "CardValue": 0,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 3,
+            "CardValue": 1,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 1,
+            "CardValue": 9,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 3,
+            "CardValue": 7,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 0,
+            "CardValue": 12,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 3,
+            "CardValue": 9,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 1,
+            "CardValue": 1,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 0,
+            "CardValue": 9,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 3,
+            "CardValue": 5,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 3,
+            "CardValue": 3,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 0,
+            "CardValue": 2,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 3,
+            "CardValue": 11,
+            "WasPlayed": false
+          }
+        ],
+        "Score": 0,
+        "MustSkip": false
+      },
+      {
+        "Id": "0fdd9867-6390-4b07-a24c-0b1a96cf4292",
+        "PlayerType": 0,
+        "Name": "Du",
+        "PlayerHand": [
+          {
+            "CardColor": 2,
+            "CardValue": 1,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 2,
+            "CardValue": 9,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 3,
+            "CardValue": 4,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 0,
+            "CardValue": 10,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 2,
+            "CardValue": 10,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 2,
+            "CardValue": 4,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 3,
+            "CardValue": 6,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 2,
+            "CardValue": 4,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 4,
+            "CardValue": 15,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 2,
+            "CardValue": 6,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 3,
+            "CardValue": 10,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 0,
+            "CardValue": 11,
+            "WasPlayed": false
+          }
+        ],
+        "Score": 0,
+        "MustSkip": false
+      },
+      {
+        "Id": "743acbaf-77e5-4f8c-8f1a-87eafd0ae0c0",
+        "PlayerType": 1,
+        "Name": "Ai7",
+        "PlayerHand": [
+          {
+            "CardColor": 3,
+            "CardValue": 8,
+            "WasPlayed": false
+          }
+        ],
+        "Score": 0,
+        "MustSkip": false
+      },
+      {
+        "Id": "bd87cddb-3197-4ac1-bb6d-6579849737bd",
+        "PlayerType": 1,
+        "Name": "Ai8",
+        "PlayerHand": [
+          {
+            "CardColor": 0,
+            "CardValue": 3,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 3,
+            "CardValue": 6,
+            "WasPlayed": false
+          },
+          {
+            "CardColor": 0,
+            "CardValue": 5,
+            "WasPlayed": false
+          }
+        ],
+        "Score": 0,
+        "MustSkip": false
+      }
+    ],
+    "HaveToShowPoints": false
+  },
+  "SelectedCard": {
+    "CardColor": 3,
+    "CardValue": 10,
+    "WasPlayed": true
+  },
+  "IsValidMove": false,
+  "PlayerIndex": 0,
+  "NextPlayerIndex": 0,
+  "AllPlayersCards": [],
+  "IsFirstRound": true,
+  "CardOnTheTable": {
+    "CardColor": 3,
+    "CardValue": 10,
+    "WasPlayed": true
+  },
+  "Winner": "Ai7",
+  "GameIsOver": true,
+  "FileToSave": "8eafa2a8-c635-4a80-8566-e41669dee192"
+}

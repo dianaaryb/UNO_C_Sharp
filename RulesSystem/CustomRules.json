@@ -1,0 +1,36 @@
+{
+  "GameRules": {
+    "StartingHandSize": 5,
+    "MaximumPlayers": 6,
+    "SkipAfterReverse": false,
+    "DrawTwoStackable": false,
+    "WildDrawFourStackable": true
+  },
+  "CardValues": {
+    "NumberCards": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9
+    },
+    "SpecialCards": {
+      "Skip": 10,
+      "Reverse": 10,
+      "DrawTwo": 10,
+      "Wild": 25,
+      "WildDrawFour": 25,
+      "WildShuffleHands": 20,
+      "WildCustomizable": 20
+    }
+  },
+  "CardColors": ["Red", "Yellow", "Green", "Blue", "Multicolor"],
+  "WinningCondition": "FirstPlayerToReach100Points",
+  "Scoring": "Points-based scoring",
+  "PenaltyForNotCallingUno": 4
+}

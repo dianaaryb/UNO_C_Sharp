@@ -1,0 +1,138 @@
+@page
+@using CardSystem
+@using UnoGame
+@model WebApp.Pages.Play.Index
+<link rel="stylesheet" type="text/css" href="css/site.css">
+
+<h1>Play</h1>
+<h5>Reload page in <span id="reload-label">-</span></h5> 
+@if (Model.GameState.GameIsOver)
+{
+    <h1>Game is over!</h1>
+}
+else
+{
+    <div id="game">
+    <div id="game-statistics">
+        <div id="game-data">
+            
+            <h3>@Model.GameState.GameConfigurations.Players[Model.GameState.PlayerIndex].Name's turn</h3>
+            @if (Model.GameState.GameConfigurations.HaveToShowPoints)
+            {
+                <table>
+                    <tr>
+                        <th>Player</th>
+                        <th>Score</th>
+                    </tr>
+                    @foreach (var player in Model.GameState.GameConfigurations.Players)
+                    {
+                        <tr>
+                            <td>@player.Name</td>
+                            <td>@player.Score</td>
+                        </tr>
+                    }
+                </table>
+            }
+            <table>
+                <tr>
+                    <th>Deck</th>
+                    <th>Discard Pile</th>
+                </tr>
+                <tr>
+                    <td>@Model.GameState.Dealer.DeckPile.Count()</td>
+                    <td>@Model.GameState.Dealer.DiscardPile.Count()</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Player</th>
+                    <th>Cards</th>
+                </tr>
+                @foreach (var player in Model.GameState.GameConfigurations.Players)
+                {
+                    <tr>
+                        <td>@player.Name</td>
+                        <td>@player.PlayerHand.Count</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+    <div id="game-field">
+        <div id="active-card-area">
+            <div class="card card-@Model.GameState.CardOnTheTable.CardColor.ToString()!.ToLower()">
+                <div class="oval">
+                    <span class="text text-@Model.GameState.CardOnTheTable.CardColor.ToString()!.ToLower()">@CardSymbols.GetSymbol(@Model.GameState.CardOnTheTable.CardValue)</span>
+                </div>
+            </div>
+        </div>
+        <div id="player-cards">
+            @for (int i = 0; i < Model.PlayerCardsInGame.Count; i++)
+            {
+                if (Model.PlayerId == Model.GameState.GameConfigurations.Players[Model.GameState.PlayerIndex].Id)
+                {
+                    var i1 = i;
+                    if (Model.GameState.CheckIfValidMove(Model.PlayerCardsInGame[i], Model.GameState.CardOnTheTable))
+                    {
+                        <a asp-page="/Play/Index" asp-page-handler="PlayCard" asp-route-gameId="@Model.GameId" asp-route-playerId="@Model.PlayerId" asp-route-cardIndex="@(i1)" asp-route-saver="@Model.Saver">
+                            <div class="card card-@Model.PlayerCardsInGame[i1].CardColor.ToString()!.ToLower()">
+                                <div class="oval">
+                                    <span class="text text-@Model.PlayerCardsInGame[i1].CardColor.ToString()!.ToLower()">@CardSymbols.GetSymbol(@Model.PlayerCardsInGame[i1].CardValue)</span>
+                                </div>
+                            </div>
+                        </a> //if card suitable, works as link
+                    }
+                    else
+                    {
+                        <div class="card card-@Model.PlayerCardsInGame[i1].CardColor.ToString()!.ToLower()">
+                            <div class="oval">
+                                <span class="text text-@Model.PlayerCardsInGame[i1].CardColor.ToString()!.ToLower()">@CardSymbols.GetSymbol(@Model.PlayerCardsInGame[i1].CardValue)</span>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="card card-@Model.PlayerCardsInGame[i].CardColor.ToString()!.ToLower()">
+                        <div class="oval">
+                            <span class="text text-@Model.PlayerCardsInGame[i].CardColor.ToString()!.ToLower()">@CardSymbols.GetSymbol(@Model.PlayerCardsInGame[i].CardValue)</span>
+                        </div>
+                    </div> // if not your turn, link absent
+                }
+            }
+        </div>
+        @if (Model.PlayerId == Model.GameState.GameConfigurations.Players[Model.GameState.PlayerIndex].Id)
+        {
+            <div id="game-buttons">
+                <form method="post" asp-page-handler="Take" asp-route-gameId="@Model.GameId" asp-route-playerId="@Model.PlayerId"  asp-route-saver="@Model.Saver">
+                    <button type="submit">TAKE</button> 
+                </form>
+                
+                @* if active player, take button appears and can be clicked *@
+                
+                @if (Model.GameState.GameConfigurations.Players[Model.GameState.PlayerIndex].PlayerHand.Count == 2)
+                {
+                    <form method="post" asp-page-handler="SayUno" asp-route-gameId="@Model.GameId" asp-route-playerId="@Model.PlayerId"  asp-route-saver="@Model.Saver">
+                        <button type="submit">UNO</button>
+                    </form>
+                }
+            </div>
+        }
+    </div>
+    </div>
+}
+
+@section Scripts
+{ 
+    <script>
+        let timerValue = 2
+        let timerLabel = document.querySelector("#reload-label")
+        setInterval(() => {
+            timerValue--;
+            timerLabel.innerHTML = timerValue.toString();
+            if (timerValue <= 0){
+                window.location.reload();
+            }    
+        }, 500);
+    </script>
+}

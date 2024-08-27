@@ -1,0 +1,90 @@
+@page
+@using PlayerSystem
+@using UnoGame
+@using Domain.Database
+@model WebApp.Pages.Games.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Uno Game</h1>
+
+<p>
+    <a asp-page="Create">Start new game</a>
+</p> 
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Game[0].CreatedAtDt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Game[0].UpdatedAtDt)
+            </th>
+            <th>
+                Continue as..
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Game) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedAtDt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UpdatedAtDt)
+            </td>            
+            <td>
+                @item.Players!.Count:
+                @foreach (PlayerToDb player in item.Players)
+                {
+                    var playerLabel = player.Name + "(" + player.PlayerType + ")";
+                    if (player.PlayerType is PlayerType.Human)
+                    {
+                        <a asp-page="/Play/Index" asp-route-gameId="@item.Id" asp-route-playerId="@player.Id" asp-route-saver="Database">@playerLabel</a>
+                    }
+                    else
+                    {
+                        @playerLabel
+                    }
+                }
+            </td>
+            <td>
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    
+    @for (int i = 0; i < Model.GamesFromFileSystem.Count; i++)
+    {
+        <tr>
+            <td>@Model.GamesFromFileData![i].dateTime</td>
+            <td>@Model.GamesFromFileData![i].dateTime</td>
+            <td>@Model.GamesFromFileSystem[i].GameConfigurations.Players.Count:
+            
+                @foreach (Player player in Model.GamesFromFileSystem[i].GameConfigurations.Players)
+                {
+                    var playerLabel = player.Name + "(" + player.PlayerType + ")";
+                    if (player.PlayerType is PlayerType.Human)
+                    {
+                        <a asp-page="/Play/Index" asp-route-gameId="@Model.GamesFromFileSystem[i].Id" asp-route-playerId="@player.Id" asp-route-saver="FileSystem">@playerLabel</a>
+                    }
+                    else
+                    {
+                        @playerLabel
+                    }
+                } 
+            </td>
+            <td>
+                <a asp-page="./Details" asp-route-id="@Model.GamesFromFileSystem[i].Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@Model.GamesFromFileSystem[i].Id">Delete</a>
+            </td>
+            <>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,47 @@
+@page
+@model WebApp.Pages.Games.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="game-form">
+    <h2>Start New Game</h2>
+    <form method="post">
+        <div>
+            <label>Total Players:</label>
+            <input asp-for="GameConfiguration.TotalPlayers" type="text" />
+        </div>
+        <div>
+            <label>Human Players:</label>
+            <input asp-for="GameConfiguration.HumanPlayers" type="text" />
+        </div>
+        <div>
+            <label>Player Names:</label>
+            <input type="text" asp-for="PlayerNames" class="form-control" 
+                   placeholder="Enter player names separated by commas" />
+            <span asp-validation-for="PlayerNames" class="text-danger"></span>
+        </div>
+        <div>
+            <label>Save Location:</label>
+            <select asp-for="GameConfiguration.SaveLocation">
+                <option value="Database">Database</option>
+                <option value="FileSystem">File System</option>
+            </select>
+        </div>
+        <div>
+            <label>Rule Type:</label>
+            <select asp-for="GameConfiguration.RuleDictionaryType">
+                <option value="Official">Official</option>
+                <option value="Custom">Custom</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Create Game" />
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

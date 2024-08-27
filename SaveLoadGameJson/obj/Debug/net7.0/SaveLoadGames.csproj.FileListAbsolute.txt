@@ -1,0 +1,14 @@
+/Users/di/RiderProjects/icd0008-23f/UNO/SaveLoadGames/bin/Debug/net7.0/SaveLoadGames.deps.json
+/Users/di/RiderProjects/icd0008-23f/UNO/SaveLoadGames/bin/Debug/net7.0/SaveLoadGames.dll
+/Users/di/RiderProjects/icd0008-23f/UNO/SaveLoadGames/bin/Debug/net7.0/SaveLoadGames.pdb
+/Users/di/RiderProjects/icd0008-23f/UNO/SaveLoadGames/obj/Debug/net7.0/SaveLoadGames.GeneratedMSBuildEditorConfig.editorconfig
+/Users/di/RiderProjects/icd0008-23f/UNO/SaveLoadGames/obj/Debug/net7.0/SaveLoadGames.AssemblyInfoInputs.cache
+/Users/di/RiderProjects/icd0008-23f/UNO/SaveLoadGames/obj/Debug/net7.0/SaveLoadGames.AssemblyInfo.cs
+/Users/di/RiderProjects/icd0008-23f/UNO/SaveLoadGames/obj/Debug/net7.0/SaveLoadGames.csproj.CoreCompileInputs.cache
+/Users/di/RiderProjects/icd0008-23f/UNO/SaveLoadGames/obj/Debug/net7.0/SaveLoadGames.dll
+/Users/di/RiderProjects/icd0008-23f/UNO/SaveLoadGames/obj/Debug/net7.0/refint/SaveLoadGames.dll
+/Users/di/RiderProjects/icd0008-23f/UNO/SaveLoadGames/obj/Debug/net7.0/SaveLoadGames.pdb
+/Users/di/RiderProjects/icd0008-23f/UNO/SaveLoadGames/obj/Debug/net7.0/ref/SaveLoadGames.dll
+/Users/di/RiderProjects/icd0008-23f/UNO/SaveLoadGames/bin/Debug/net7.0/SaveLoadGames.runtimeconfig.json
+/Users/di/RiderProjects/icd0008-23f/UNO/SaveLoadGames/obj/Debug/net7.0/SaveLoadGames.csproj.AssemblyReference.cache
+/Users/di/RiderProjects/icd0008-23f/UNO/SaveLoadGames/obj/Debug/net7.0/SaveLoadGames.genruntimeconfig.cache
